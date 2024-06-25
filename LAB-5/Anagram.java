@@ -9,10 +9,13 @@ public class Anagram {
         for(int i=0; i<n; i++){
             arr[i] = sc.next();
         }
-        System.out.print("Enter any word : ");
-        String word = sc.next();
         int random = (int)(Math.random()*n);
         String anagram = arr[random];
+        System.out.println("random word is : "+anagram);
+        System.out.print("Enter any word : ");
+        String word = sc.next();
+
+       
 
         if(anagram.length()!= word.length()){
             System.out.println("No anagram found");
@@ -25,12 +28,23 @@ public class Anagram {
             Arrays.sort(ana);
             Arrays.sort(w);
             
-            if(Arrays.equals(ana, w)){
+            // if(Arrays.equals(ana, w)){
+            //     System.out.println("Anagram found : "+anagram);
+            // }else{
+            //     System.out.println("Anagram not found");
+            int c=0;
+            for(int i=0;i<ana.length;i++){
+                if(ana[i]!=w[i]){
+                    c++;
+                }
+            }
+            if(c==0){
                 System.out.println("Anagram found : "+anagram);
-            }else{
+            }
+            else{
                 System.out.println("Anagram not found");
-            
+            }
         
             }
     }
-}
+
