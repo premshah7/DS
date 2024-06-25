@@ -4,6 +4,7 @@ import java.util.*;
 public class DuplicateArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a size of array : ");
         int n=sc.nextInt();
         int[] arr = new int[n];
         for(int i=0; i<n; i++){
@@ -22,7 +23,7 @@ public class DuplicateArray {
             }
     
         }
-        if(flag==0){
+        if(count==0){
             System.out.println("Doesn't contain a duplicate number");
         }
     }

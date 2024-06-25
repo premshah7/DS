@@ -13,30 +13,7 @@ public class DeleteDuplicate {
             arr[i] = sc.nextInt();
         }
 
-        // Vector<Integer> v = new Vector<>(n);    
-        // v.addElement(arr[0]);
-
-        // for(int i=0; i<n; i++){
-        //     for(int j=0; j<v.size(); j++){
-                
-        //         if(v.contains(arr[i])){
-        //             continue;
-        //         }
-        //         else{
-        //             v.addElement(arr[i]);
-        //         }
-        //     }
-        // }
-        // v.trimToSize();
-
-        // System.out.println("Updated array is :");
-        // for(int i:v){
-        //     System.out.print(i+" ");
-        // }
-
-
-
-        int num,pos;
+        int num=0,pos;
         int[] newArray = new int[arr.length];
         for(int i=0;i<n; i++){
              newArray[i] = arr[i];
@@ -61,7 +38,7 @@ public class DeleteDuplicate {
             }
             
         }
-
+        System.out.println("Updated Array is : ");
         for(int i=0; i<n-1; i++){
             System.out.println(newArray[i]);
         }

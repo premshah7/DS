@@ -6,7 +6,9 @@ import java.util.Arrays;
 public class MergeUnsortedArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a size of array 1 : ");
         int n = sc.nextInt();
+        System.out.print("Enter a size of array 2 : ");
         int m = sc.nextInt();
 
         int[] arr1 = new int[n];
