@@ -1,4 +1,4 @@
-public class Armstrong {
+public class Armstron {
     public static void main(String[] args) {
         
         int ans=0, rem;

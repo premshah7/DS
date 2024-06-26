@@ -2,15 +2,20 @@ import java.util.*;
 public class Anagram {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+       
         System.out.print("Enter size of array : ");
         int n = sc.nextInt();
+       
         String[] arr = new String[n];
         System.out.println("Enter elements of array : ");
+        
         for(int i=0; i<n; i++){
             arr[i] = sc.next();
         }
+        
         int random = (int)(Math.random()*n);
         String anagram = arr[random];
+
         System.out.println("random word is : "+anagram);
         System.out.print("Enter any word : ");
         String word = sc.next();
@@ -28,20 +33,9 @@ public class Anagram {
             Arrays.sort(ana);
             Arrays.sort(w);
             
-            // if(Arrays.equals(ana, w)){
-            //     System.out.println("Anagram found : "+anagram);
-            // }else{
-            //     System.out.println("Anagram not found");
-            int c=0;
-            for(int i=0;i<ana.length;i++){
-                if(ana[i]!=w[i]){
-                    c++;
-                }
-            }
-            if(c==0){
+            if(Arrays.equals(ana, w)){
                 System.out.println("Anagram found : "+anagram);
-            }
-            else{
+            }else{
                 System.out.println("Anagram not found");
             }
         

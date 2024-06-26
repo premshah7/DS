@@ -1,5 +1,5 @@
 
-package Lab1;
+// package Lab1;
 import java.util.*;
 
 public class OddEven {
